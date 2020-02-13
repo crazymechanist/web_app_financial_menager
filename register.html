@@ -1,22 +1,60 @@
 <!DOCTYPE html>
 <html lang="pl">
 
-  <head>
+<head>
+	<meta charset="utf-8">
+	<title>Menadżer finansów</title>
+	<meta name="description" content="Program do prowadzenia osobistego budżetu">
+	<meta name="keywords" content="budżet, domowy, wydatki, gospodarstwo domowe">
+	<meta name="author" content="Mateusz Nowakowski">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="arkusz.css">
+	<script src="skrypt.js"></script>
 
-     <meta charset="utf-8">
-     <title>Menadżer finansów</title>
+</head>
 
-     <meta name="description" content="Program do prowadzenia osobistego budżetu">
-     <meta name="keywords" content="budżet, domowy, wydatki, gospodarstwo domowe">
-     <meta name="author" content="Mateusz Nowakowski">
-
-     <meta http-equiv="X-Ua-Compatible" content="IE=edge">
-     <link rel="stylesheet" href="arkusz.css">
-     <script src="skrypt.js"></script>
-
-  </head>
-  <body>
-
-  </body>
+<body>
+	<div id="container">
+	
+		<header>
+			<div id="logo">
+				<h1>Zarejestruj się</h1>
+			</div>
+		</header>
+		
+		<nav>
+			<div id="navigation">
+			Zajerejestruj się<br/>
+			Zaloguj się<br/>
+			Ustawienia<br/>
+			</div>
+		</nav>
+		
+		<main>
+			<article>
+				<form action="login.php" method="post">
+					<div id="content">
+						<p> <label> Podaj login: <input type="text" id="login" placeholder="nick lub e-mail"> </label> </p>
+						<p> <label>Podaj hasło:<input type="password" id="pass"  placeholder="hasło"> </label> </p> 
+						<p> <label>Podaj imię:<input type="text" id="name" placeholder="imię"> </label> </p>
+						<p> <label>Podaj nazwisko:<input type="text" id="surname" placeholder="nazwisko"> </label> </p>
+					</div>
+				</form>
+			</article>
+		</main>
+		
+		<aside>
+			<div id="ads">
+				<img src="img/ads.jpg" />
+			</div>
+		</aside>
+		
+		<footer>
+			<div id="footer">
+				Budżet osobisty &copy; Wszelkie prawa zastrzeżone
+			</div>
+		</footer>
+	</div>
+</body>
 
 </html>
