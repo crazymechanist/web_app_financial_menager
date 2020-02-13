@@ -1,5 +1,41 @@
-body
-{
-   background-color: gray;
-   font-family: Times New Roman;
-}
+body{
+	background-color: gray;
+	font-family: Times New Roman;}
+
+		#container{
+	width: 1000px;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;}
+	
+		#logo{
+	background-color: black;
+	color: white;
+	text-align:center;
+	padding: 15px;}
+	
+		#navigation{
+	width: 160px;
+	padding: 10px;
+	min-height:620px;
+	background-color: red;
+	float:left;}
+
+		#content{
+	width: 630px;
+	padding: 5px;
+	float:left;}
+
+		#ads{
+	background-color: white;
+	width: 160px;
+	padding: 10px;
+	min-height:620px;
+	background-color: yellow;
+	float:left;}
+	
+		#footer{
+	background-color: purple;
+	clear:both;}
+
+
