@@ -9,7 +9,9 @@
 	<meta name="author" content="Mateusz Nowakowski">
 	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="arkusz.css">
+	<link rel="stylesheet" href="css/fontello.css">
 	<script src="skrypt.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap&subset=latin-ext" rel="stylesheet">
 
 </head>
 
@@ -18,28 +20,38 @@
 	
 		<header>
 			<div id="logo">
-				<h1>Zarejestruj się</h1>
+				<h1>Budżet osobisty  <div class="skewEl"><i class="icon-calc"></i></div></h1>
 			</div>
 		</header>
 		
 		<nav>
 			<div id="navigation">
-			Zajerejestruj się<br/>
-			Zaloguj się<br/>
-			Ustawienia<br/>
+			<p>Zajerejestruj się <i class="icon-wpforms"></i></p>
+			<p>Zaloguj się <i class="icon-login"></i></p>
+			<p>Ustawienia <i class="icon-wrench"></i></p>
 			</div>
 		</nav>
 		
 		<main>
 			<article>
-				<form action="login.php" method="post">
-					<div id="content">
-						<p> <label> Podaj login: <input type="text" id="login" placeholder="nick lub e-mail"> </label> </p>
-						<p> <label>Podaj hasło:<input type="password" id="pass"  placeholder="hasło"> </label> </p> 
-						<p> <label>Podaj imię:<input type="text" id="name" placeholder="imię"> </label> </p>
-						<p> <label>Podaj nazwisko:<input type="text" id="surname" placeholder="nazwisko"> </label> </p>
-					</div>
-				</form>
+				<div id="content">
+					<h1>Zarejestruj się</h1>
+					<form action="register.php" method="post">
+						<label> <p>Podaj login: </p> 
+						<input type="text" id="login" placeholder="nick lub e-mail"> 
+						</label>
+						<label><p>Podaj hasło: </p>
+						<input type="password" id="pass"  placeholder="hasło"> 
+						</label>
+						<label><p>Podaj imię: </p> 
+						<input type="text" id="name" placeholder="imię"> 
+						</label>
+						<label><p>Podaj nazwisko: </p> 
+						<input type="text" id="surname" placeholder="nazwisko"> 
+						</label>
+						<p><input type="submit" value="Kliknij"> </p>
+					</form>
+				</div>
 			</article>
 		</main>
 		
@@ -50,6 +62,7 @@
 		</aside>
 		
 		<footer>
+			<div style="clear:both;"></div>
 			<div id="footer">
 				Budżet osobisty &copy; Wszelkie prawa zastrzeżone
 			</div>

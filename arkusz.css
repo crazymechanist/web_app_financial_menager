@@ -1,41 +1,114 @@
 body{
-	background-color: gray;
-	font-family: Times New Roman;}
+background-color: #4d5266;
+background-image: url(img/connected.png)/* Background pattern from Transparent Textures*/;
+font-family: 'Noto Serif', serif;}
 
-		#container{
-	width: 1000px;
-	background-color: white;
-	margin-left: auto;
-	margin-right: auto;}
-	
-		#logo{
-	background-color: black;
-	color: white;
-	text-align:center;
-	padding: 15px;}
-	
-		#navigation{
-	width: 160px;
-	padding: 10px;
-	min-height:620px;
-	background-color: red;
-	float:left;}
+#container{
+width: 1000px;
+background-color: white;
+margin-left: auto;
+margin-right: auto;}
 
-		#content{
-	width: 630px;
-	padding: 5px;
-	float:left;}
+#logo{
+font-size:20px;
+background-color: black;
+color: white;
+text-align:center;
+padding: 5px;}
 
-		#ads{
-	background-color: white;
-	width: 160px;
-	padding: 10px;
-	min-height:620px;
-	background-color: yellow;
-	float:left;}
+#logo>h1>.skewEl{
+font-size:45px;
+transform: skewY(15deg);
+//transform: rotate(5deg);
+-ms-transform: skewY(15deg);
+//-ms-transform: rotate(5deg);
+-webkit-transform: skewY(15deg);
+//-webkit-transform: rotate(5deg);
+color: red;
+display:inline-block;}
+
+#navigation{
+background-color: #323232;
+background-image: url(img/white-brushed.png)/* Background pattern from Toptal Subtle Patterns */;
+width: 160px;
+padding: 10px;
+min-height:620px;
+float:left;}
+
+#navigation > p{
+text-align: center;
+border-radius: 3px;
+background-color: white;
+color: black;
+display: block;}
+
+#navigation > p:hover{
+cursor: pointer;
+color: rgb(200,200,200);
+background-color: rgb(100,100,100);}		
+
+#content{
+font-size:16px;
+text-align: center;
+width: 575px;
+padding: 5px;
+padding-left: 60px;
+float:left;}
+
+#content > form > label > p{
+padding: 0px;
+margin: 0px;}
+
+#content>h1{
+font-size:26px;
+}
+
+#ads{
+background-color: #323232;
+background-image: url(img/white-brushed.png);
+width: 160px;
+padding: 10px;
+min-height:620px;
+float:left;}
+
+#footer{
+color: rgb(180,180,180);
+background-color: black;
+font-style:italic;
+clear:both;}
+
+input[type=text],
+input[type=password]{
+width: 400px;
+box-sizing: border-box;
+text-align:center;
+font-family: 'Noto Serif', serif;
+border-radius: 1px;
+border: solid 2px black;
+margin-bottom: 5px;
+padding: 5px}
+
+input[type=text]:focus,
+input[type=password]:focus{
+border: solid 3px red;}		
+
+input[type=submit]{
+width: 300px;
+padding: 15px 10px;
+font-family: 'Noto Serif', serif;
+letter-spacing: 3px;
+background-color: red;
+font-size:20px;
+color: white;
+cursor: pointer;
+border-radius: 8px;
+border: solid 2px black;
+margin-top: 20px;
+box-sizing: border-box;}	
+
+input[type=submit]:hover
+{background-color: black;}
+
 	
-		#footer{
-	background-color: purple;
-	clear:both;}
 
 
