@@ -1,6 +1,6 @@
 body{
-background-color: #4d5266;
-background-image: url(img/connected.png)/* Background pattern from Transparent Textures*/;
+background-color: hsl(0, 0%, 20%);
+/*background-image: url(img/connected.png);/* Background pattern from Transparent Textures*/
 font-family: 'Noto Serif', serif;}
 
 #container{
@@ -11,7 +11,8 @@ margin-right: auto;}
 
 #logo{
 font-size:20px;
-background-color: black;
+background-color: hsl(0, 0%, 10%);
+background-image: url(img/connected.png);
 color: white;
 text-align:center;
 padding: 5px;}
@@ -30,29 +31,31 @@ display:inline-block;}
 #navigation{
 background-color: #323232;
 background-image: url(img/white-brushed.png)/* Background pattern from Toptal Subtle Patterns */;
-width: 160px;
+width: 185px;
 padding: 10px;
 min-height:620px;
 float:left;}
 
-#navigation > p{
+.menu {
+width: 160px;
+height: 20px;
+padding: 10px 5px;
+margin: 8px;
 text-align: center;
 border-radius: 3px;
-background-color: white;
-color: black;
-display: block;}
+background-color: hsl(230,25%,80%);
+color: black;}
 
-#navigation > p:hover{
-cursor: pointer;
+.menu:hover{
 color: rgb(200,200,200);
 background-color: rgb(100,100,100);}		
 
 #content{
 font-size:16px;
 text-align: center;
-width: 575px;
+width: 590px;
 padding: 5px;
-padding-left: 60px;
+padding-left: 20px;
 float:left;}
 
 #content > form > label > p{
@@ -73,7 +76,7 @@ float:left;}
 
 #footer{
 color: rgb(180,180,180);
-background-color: black;
+background-color: hsl(0, 0%, 10%);
 font-style:italic;
 clear:both;}
 
@@ -86,7 +89,8 @@ font-family: 'Noto Serif', serif;
 border-radius: 1px;
 border: solid 2px black;
 margin-bottom: 5px;
-padding: 5px}
+padding: 5px;
+outline: none;}
 
 input[type=text]:focus,
 input[type=password]:focus{
@@ -97,17 +101,45 @@ width: 300px;
 padding: 15px 10px;
 font-family: 'Noto Serif', serif;
 letter-spacing: 3px;
-background-color: red;
+background-color: rgb(230,10,10);
 font-size:20px;
 color: white;
 cursor: pointer;
-border-radius: 8px;
+border-radius: 5px;
 border: solid 2px black;
 margin-top: 20px;
-box-sizing: border-box;}	
+box-sizing: border-box;
+outline:none}	
 
-input[type=submit]:hover
-{background-color: black;}
+input[type=submit]:hover,
+input[type=submit]:focus
+{background-color: rgb(255,0,0)}
+
+a{
+	display:block;
+	cursor: pointer;
+	width: 100%;
+	height: 30px;
+	color: black;
+	text-decoration: none;}
+
+a:visited{
+	display:block;
+	cursor: pointer;
+	width: 100%;
+	height: 30px;
+	color: black;
+	text-decoration: none;}
+
+a:hover{
+	display:block;
+	width: 100%;
+	height: 30px;
+	color: black;
+	text-decoration: none;}
+	
+
+
 
 	
 
