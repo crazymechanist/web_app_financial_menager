@@ -54,7 +54,7 @@
 	
 		<header>
 			<div id="logo">
-				<h1>Budżet osobisty  <div class="skewEl"><i class="icon-calc"></i></div></h1>
+				<div id="head1" >Budżet osobisty  <div id="skewEl"><i class="icon-calc"></i></div></div>
 			</div>
 		</header>
 		
@@ -64,7 +64,7 @@
 				<div class="menu">
 					<a href="#">Ustawienia <i class="icon-wrench"></i></a>
 				 </div>
-				<div class="menu maxMargin"> 
+				<div class="menu maxMargin darkBlue"> 
 					<a href="#">Wyloguj <i class="icon-logout"></i></a>
 				</div>
 			</div>
@@ -75,7 +75,7 @@
 				<div id="content" class="long">
 					<h1>Wyświetl</h1>
 					<form action="display_balance.php" method="post">
-							<div>Okres: </div>
+							<label for="date_type">Okres: </label>
 							<select class="custom-select" id="date_type"> 
 								<option value="b">Bieżący miesiac</option>
 								<option value="z">Zeszły miesiac</option>
@@ -83,12 +83,14 @@
 							</select>
 							
 							<div class="minMargin">
-								<label><p>Data początkowa:
-								<input class ="midForm" type="date" id="begDateOfExp"> </p> 
-								</label>							
-								<label><p>Data końcowa:	:
-								<input class ="midForm" type="date" id="endDateOfExp"> </p> 
-								</label>
+								<p>
+								<label for="begDateOfExp">Data początkowa:</label>	
+								<input class ="midForm" type="date" id="begDateOfExp">
+								</p>
+								<p>
+								<label for="endDateOfExp">Data końcowa:</label>
+								<input class ="midForm" type="date" id="endDateOfExp">
+								</p>
 							</div>
 							
 					</form>
@@ -172,8 +174,8 @@
 		</main>
 		
 		<aside>
-			<div class="long" id="ads" >
-				<img src="img/ads.jpg" />
+			<div id="ads" class="long">
+				<img src="img/ads.jpg" alt="Reklama"/>
 			</div>
 		</aside>
 		

@@ -20,7 +20,7 @@
 	
 		<header>
 			<div id="logo">
-				<h1>Budżet osobisty  <div class="skewEl"><i class="icon-calc"></i></div></h1>
+				<div id="head1" >Budżet osobisty  <div id="skewEl"><i class="icon-calc"></i></div></div>
 			</div>
 		</header>
 		
@@ -30,7 +30,7 @@
 				<div class="menu">
 					<a href="#">Ustawienia <i class="icon-wrench"></i></a>
 				 </div>
-				<div class="menu maxMargin"> 
+				<div class="menu maxMargin darkBlue"> 
 					<a href="#">Wyloguj <i class="icon-logout"></i></a>
 				</div>
 			</div>
@@ -42,21 +42,23 @@
 					<h1>Dodaj wydatek</h1>
 					<form action="add_expense.php" method="post">
 						<div class="minMargin">
-							<label>Kwota: 
-								<input class ="minForm" type="number" id="zlote" placeholder="złoty" min="0"> ,
-								<input class ="minForm" type="number" id="grosze" placeholder="groszy" min="0" max="99">
-							</label>
+							Kwota: 
+								<label><input class ="minForm" type="number" id="zlote" placeholder="złoty" min="0"></label> ,
+								<label><input class ="minForm" type="number" id="grosze" placeholder="groszy" min="0" max="99"></label>
+							
 						</div>
 						<div class="minMargin">
-							<label><p>Data:
-							<input class ="midForm" type="date" id="dateOfExp"> </p> 
+							<label>
+								Data: <input class ="midForm" type="date" id="dateOfExp">
 							</label>
 						</div>
 						<div class="minMargin">Sposób płatności: </div>
 						<label><input type="radio" name="payment" value="kk">Karta kredytowa</label>
 						<label><input type="radio" name="payment" value="kd">Karta debetowa</label>
 						<label><input type="radio" name="payment" value="g">Gotówka</label>
-						<label><div class="minMargin">Kategoria: </div>
+						<div class="minMargin"><label for="type">Kategoria:</label></div>
+						<div>
+						<label>
 							<select class="custom-select" id="type"> 
 								<option value="j">Jedzenie</option>
 								<option value="m">Mieszkanie</option>
@@ -76,8 +78,10 @@
 								<option value="u">Inne wydatki</option>
 							</select>
 						</label>
+						</div>
+						
 						<div>
-						<div class="minMargin">Komentarz: </div>
+						<div class="minMargin"><label for="coment">Komentarz:</label></div>
 						<label><textarea id="coment" style="resize: none;" rows="3" cols="44"></textarea></label>
 						</div>
 						<div class="minMargin"><input  type="submit" value="Dodaj"> </div>
@@ -88,7 +92,7 @@
 		
 		<aside>
 			<div id="ads">
-				<img src="img/ads.jpg" />
+				<img src="img/ads.jpg" alt="Reklama"/>
 			</div>
 		</aside>
 		

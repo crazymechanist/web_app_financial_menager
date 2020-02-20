@@ -3,6 +3,11 @@ background-color: hsl(0, 0%, 20%);
 /*background-image: url(img/connected.png);/* Background pattern from Transparent Textures*/
 font-family: 'Noto Serif', serif;}
 
+p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
 #container{
 width: 1000px;
 background-color: white;
@@ -10,7 +15,7 @@ margin-left: auto;
 margin-right: auto;}
 
 #logo{
-font-size:20px;
+font-size:40px;
 height: 110px;
 background-color: hsl(0, 0%, 10%);
 background-image: url(img/connected.png);
@@ -18,14 +23,16 @@ color: white;
 text-align:center;
 padding: 5px;}
 
-#logo>h1>.skewEl{
+#head1{
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+#skewEl{
 font-size:45px;
 transform: skewY(15deg);
-//transform: rotate(5deg);
 -ms-transform: skewY(15deg);
-//-ms-transform: rotate(5deg);
 -webkit-transform: skewY(15deg);
-//-webkit-transform: rotate(5deg);
 color: red;
 display:inline-block;}
 
@@ -57,9 +64,8 @@ background-color: rgb(100,100,100);}
 #content{
 font-size:16px;
 text-align: center;
-width: 590px;
+width: 605px;
 padding: 5px;
-padding-left: 20px;
 float:left;}
 
 #content > form > label > p{
@@ -214,7 +220,7 @@ margin-top: 25px;}
 margin-top: 40px;}
 
 .maxMargin{
-margin-top: 540px;}
+margin-top: 510px;}
 
 #expenses {
  border-collapse: collapse;
@@ -263,13 +269,3 @@ width: 90%;
 margin-right: 5%;
 height: 515px;
 }
-+-
-
-
-
-
-
-
-	
-
-
