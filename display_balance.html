@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+	<title>Menadżer finansów</title>
+	<meta name="description" content="Program do prowadzenia osobistego budżetu">
+	<meta name="keywords" content="budżet, domowy, wydatki, gospodarstwo domowe">
+	<meta name="author" content="Mateusz Nowakowski">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="arkusz.css">
+	<link rel="stylesheet" href="css/fontello.css">
+	<script src="skrypt.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Jedzenie', 'Kwota'],
+          ['Transport',     999],
+          ['Telekomunikacja',      999],
+          ['Opieka zdrowotna',  999],
+          ['Ubranie', 999],
+          ['Higiena',    999],
+          ['Dzieci',    999],
+          ['Rozrywka',    999],
+          ['Wycieczka',    999],
+          ['Książki',    999],
+          ['Oszczędności',    999],
+          ['Na złotą jesień, czyli emeryturę',    999],
+          ['Spłata długów	',    999],
+          ['Darowizna',    999],
+        ]);
+
+        var options = {
+          title: 'Moje wydatki'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div id="container">
+	
+		<header>
+			<div id="logo">
+				<div id="head1" >Budżet osobisty  <div id="skewEl"><i class="icon-calc"></i></div></div>
+			</div>
+		</header>
+		
+		<nav>
+			<div id="navigation" class="long">
+				<!--<p>Zajerejestruj się <i class="icon-wpforms"></i></p>-->
+				<div class="menu">
+					<a href="#">Ustawienia <i class="icon-wrench"></i></a>
+				 </div>
+				<div class="menu maxMargin darkBlue"> 
+					<a href="#">Wyloguj <i class="icon-logout"></i></a>
+				</div>
+			</div>
+		</nav>
+		
+		<main>
+			<article>
+				<div id="content" class="long">
+					<h1>Wyświetl</h1>
+					<form action="display_balance.php" method="post">
+							<label for="date_type">Okres: </label>
+							<select class="custom-select" id="date_type"> 
+								<option value="b">Bieżący miesiac</option>
+								<option value="z">Zeszły miesiac</option>
+								<option value="i">Inny</option>
+							</select>
+							
+							<div class="minMargin">
+								<p>
+								<label for="begDateOfExp">Data początkowa:</label>	
+								<input class ="midForm" type="date" id="begDateOfExp">
+								</p>
+								<p>
+								<label for="endDateOfExp">Data końcowa:</label>
+								<input class ="midForm" type="date" id="endDateOfExp">
+								</p>
+							</div>
+							
+					</form>
+					<div class="minMargin">
+						<table id="expenses">
+							<tr>
+								<th>Nazwa</th>
+								<th>Kwota</th>
+							</tr>
+							<tr>
+								<td>Jedzenie</td>
+								<td>999 PLN</td>
+							</tr>
+							<tr>
+								<td>Transport</td>
+								<td>999 PLN</td>
+							</tr>	
+							<tr>
+								<td>Telekomunikacja</td>
+								<td>999 PLN</td>
+							</tr>	
+							<tr>
+								<td>Opieka zdrowotna</td>
+								<td>999 PLN</td>
+							</tr>	
+							<tr>
+								<td>Ubranie</td>
+								<td>999 PLN</td>
+							</tr>	
+							<tr>
+								<td>Higiena</td>
+								<td>999 PLN</td>
+							</tr>	
+							<tr>
+								<td>Dzieci</td>
+								<td>999 PLN</td>
+							</tr>	
+							<tr>
+								<td>Rozrywka</td>
+								<td>999 PLN</td>
+							</tr>	
+							<tr>
+								<td>Wycieczka</td>
+								<td>999 PLN</td>
+							</tr>	
+							<tr>
+								<td>Książki</td>
+								<td>999 PLN</td>
+							</tr>	
+							<tr>
+								<td>Oszczędności</td>
+								<td>999 PLN</td>
+							</tr>	
+							<tr>
+								<td>Na złotą jesień, czyli emeryturę</td>
+								<td>999 PLN</td>
+							</tr>	
+							<tr>
+								<td>Spłata długów</td>
+								<td>999 PLN</td>
+							</tr>	
+							<tr>
+								<td>Darowizna</td>
+								<td>999 PLN</td>
+							</tr>	
+							<tr>
+								<td>Inne wydatki</td>
+								<td>999 PLN</td>
+							</tr>							
+							<tr id="sum">
+								<td>Suma</td>
+								<td>999 PLN</td>
+							</tr>
+						</table>
+					</div>
+					    <div id="piechart"></div>
+				</div>
+
+				
+			</article>
+		</main>
+		
+		<aside>
+			<div id="ads" class="long">
+				<img src="img/ads.jpg" alt="Reklama"/>
+			</div>
+		</aside>
+		
+		<footer>
+			<div style="clear:both;"></div>
+			<div id="footer">
+				Budżet osobisty &copy; Wszelkie prawa zastrzeżone
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

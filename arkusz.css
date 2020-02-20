@@ -3,6 +3,11 @@ background-color: hsl(0, 0%, 20%);
 /*background-image: url(img/connected.png);/* Background pattern from Transparent Textures*/
 font-family: 'Noto Serif', serif;}
 
+p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
 #container{
 width: 1000px;
 background-color: white;
@@ -10,7 +15,7 @@ margin-left: auto;
 margin-right: auto;}
 
 #logo{
-font-size:20px;
+font-size:40px;
 height: 110px;
 background-color: hsl(0, 0%, 10%);
 background-image: url(img/connected.png);
@@ -18,14 +23,16 @@ color: white;
 text-align:center;
 padding: 5px;}
 
-#logo>h1>.skewEl{
+#head1{
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+#skewEl{
 font-size:45px;
 transform: skewY(15deg);
-//transform: rotate(5deg);
 -ms-transform: skewY(15deg);
-//-ms-transform: rotate(5deg);
 -webkit-transform: skewY(15deg);
-//-webkit-transform: rotate(5deg);
 color: red;
 display:inline-block;}
 
@@ -47,8 +54,7 @@ border-radius: 3px;
 background-color: hsl(230,25%,80%);
 color: black;}
 
-.menu:last-child{
-margin-top: 540px;
+.darkBlue{
 background-color: hsl(235 ,60%,80%)}
 
 .menu:hover{
@@ -58,9 +64,8 @@ background-color: rgb(100,100,100);}
 #content{
 font-size:16px;
 text-align: center;
-width: 590px;
+width: 605px;
 padding: 5px;
-padding-left: 20px;
 float:left;}
 
 #content > form > label > p{
@@ -97,7 +102,8 @@ option{
 input[type=text],
 input[type=password],
 input[type=number],
-input[type=date]
+input[type=date],
+textarea 
 {
 width: 400px;
 box-sizing: border-box;
@@ -115,7 +121,9 @@ direction: ltr;}
 input[type=text]:focus,
 input[type=password]:focus,
 input[type=date]:focus,
-input[type=number]:focus
+input[type=number]:focus,
+.custom-select:focus,
+textarea:focus
 {
 border: solid 3px red;}		
 
@@ -206,14 +214,58 @@ width: 228px;
 }
 	
 .minMargin{
-margin-top: 35px;}
+margin-top: 25px;}
 
 .minMargin:first-child{
 margin-top: 40px;}
 
+.maxMargin{
+margin-top: 510px;}
 
+#expenses {
+ border-collapse: collapse;
+ width: 90%;
+ margin-left:5%}
 
+#expenses td, #expenses th {
+ border: 1px solid #ddd;
+ padding: 8px;
+}
 
-	
+#expenses td:first-child, #expenses th:first-child {
+ width: 60%;
+}
 
+#sum >td{
+color:#333333;
+background-color: #d8d8d8;
+}
+#sum >td:first-child{
+border-right: 2px solid #dbdbdb;
+}
 
+#expenses tr:nth-child(even){
+background-color: #f2f2f2;}
+
+#expenses tr:hover{
+background-color: #ddd;}
+
+#expenses th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+	background-color: #ff6666;
+  color: white;
+}
+
+.long{
+height: 1500px;
+}
+
+#piechart{
+margin-top: 20px;
+margin-left: 5%;
+width: 90%;
+margin-right: 5%;
+height: 515px;
+}
